@@ -3,11 +3,31 @@ import L from 'leaflet';
 import './map.scss';
 import { MapContainer, TileLayer, Marker, Popup} from 'react-leaflet';
 
+export default function MyMap(props){
+  const url= props.url
+  const title= props.title
+  return(
+    <>
+      <MapContainer center={ [10.8002581, 106.729774]} zoom={5}  style={{height: "100vh"}}>
+  <TileLayer
+    attribution={title}
+    url={url}
+  />
+  <Marker position={[51.505, -0.09]}>
+    <Popup>
+      A pretty CSS3 popup. <br /> Easily customizable.
+    </Popup>
+  </Marker>
+</MapContainer>
+</>
+  )
+}
 
+/*
 export default class MyMap extends React.Component {
   render(){
-    let url= this.props.url
-    let title= this.props.title
+    const url= this.props.url
+    const title= this.props.title
     console.log(url)
     return(
     <>
@@ -60,3 +80,4 @@ export default class MyMap extends React.Component {
 }
 
 
+*/
