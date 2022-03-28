@@ -8,12 +8,12 @@ export default function MyMap(props){
   const title= props.title
   return(
     <>
-      <MapContainer center={ [10.8002581, 106.729774]} zoom={5}  style={{height: "100vh"}}>
+      <MapContainer scrollWheelZoom={false}  center={props.center|| [10.8002581, 106.729774]} zoom={props.zoom||5}  style={{height: "100vh"}}>
   <TileLayer
     attribution={title}
     url={url}
   />
-  <Marker position={[51.505, -0.09]}>
+  <Marker position={props.position||[51.505, -0.09]}>
     <Popup>
       A pretty CSS3 popup. <br /> Easily customizable.
     </Popup>

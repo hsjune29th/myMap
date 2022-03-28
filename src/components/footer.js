@@ -29,10 +29,10 @@ export default function MyFooter(){
                         </div>
                     </div>
                     <ul className="nav">
-                        <li className="nav-item"><a href="" className="nav-link"><i className="fa-solid fa-location-dot"></i></a></li>
-                        <li className="nav-item"><a href="" className="nav-link"><i className="fa-solid fa-phone"></i></a></li>
-                        <li className="nav-item"><a href="" className="nav-link"><i className="fa-brands fa-facebook"></i></a></li>
-                        <li className="nav-item"><a href="" className="nav-link"><i className="fa-solid fa-envelope"></i></a></li>
+                        <li className="nav-item"><a href="/street/vietbando" className="nav-link"><i className="fa-solid fa-location-dot"></i></a></li>
+                        <li className="nav-item"><a href="tel:+0962.565.208" className="nav-link"><i className="fa-solid fa-phone"></i></a></li>
+                        <li className="nav-item"><a href="https://www.facebook.com/vietbando" className="nav-link"><i className="fa-brands fa-facebook"></i></a></li>
+                        <li className="nav-item"><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBpRnQzSwHVwnfqLcdqTjKQrKXZGHzDDSVWXJMspnZPVhXTNGhhVRXbZbKVzJJCfDhJRjnH" className="nav-link"><i className="fa-solid fa-envelope"></i></a></li>
                         
                     </ul>
                     <br></br>

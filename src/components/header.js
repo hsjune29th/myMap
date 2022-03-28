@@ -37,14 +37,14 @@ export default function MyHeader(){
                     Account
                   </a>
                   <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a className="dropdown-item" href="postProject">Post project</a>
+                    <a className="dropdown-item" href="/nothing">Post project</a>
                     <div className="dropdown-divider"></div>
-                    <a className="dropdown-item" href="myProject">My project</a>
+                    <a className="dropdown-item" href="/nothing">My project</a>
                     {/* <NavLink  className={"dropdown-item" } to="myProject" > My project</NavLink> */}
                    
-                    <a className="dropdown-item" href="#">My news</a>
+                    <a className="dropdown-item" href="/nothing">My news</a>
                     <div className="dropdown-divider"></div>
-                    <a className="dropdown-item" href="#">Log out</a>
+                    <a className="dropdown-item" href="/nothing">Log out</a>
                   </div>
                 </li>
                 

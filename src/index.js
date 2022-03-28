@@ -5,7 +5,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import App from './App'
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import { HashRouter } from "react-router-dom";
+//import { HashRouter } from "react-router-dom";
 //import MyHeader from './components/header';
 
 
