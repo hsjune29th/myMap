@@ -5,18 +5,21 @@ import MyFooter from './components/footer.js';
 import MyHeader from './components/header.js';
 import Countdown from './components/nothing.js'
 import {
-  BrowserRouter,
+  BrowserRouter,HashRouter,
   Route, Routes
 } from "react-router-dom";
 
 function App() {
   
   return(
+    <>
 
     
-    <BrowserRouter>
+   
       <MyHeader/>
+      <BrowserRouter>
         <Routes>
+          
           <Route exact="true" path="/" element={<MyMap
           url={'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'}
           title={'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}/>}/>
@@ -33,11 +36,12 @@ function App() {
           />}/>
           <Route  path="/nothing" element={<Countdown/>}/>
         </Routes>
+        </BrowserRouter>
       <MyFooter/>
 
 
-    </BrowserRouter>
    
+    </>
   )
 }
 
