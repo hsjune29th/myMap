@@ -13,13 +13,14 @@ function App() {
   
   return(
     <>
-
-    
+    <MyHeader/>
    
-      <MyHeader/>
-      <BrowserRouter>
-        <Routes>
-          
+
+      
+        < BrowserRouter basename={process.env.PUBLIC_URL}>
+        
+          <Routes>  
+         
           <Route exact="true" path="/" element={<MyMap
           url={'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'}
           title={'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}/>}/>
@@ -29,18 +30,16 @@ function App() {
           center={[10.810734,106.668876]}
           position={[10.810734,106.668876]}
           zoom={17}/>}/>
-           {/* <Route exact="true" path="/" element={<MyMap/>}/> */}
           <Route path="/satellite" element={<MyMap
           url={'https://api.maptiler.com/tiles/satellite-v2/{z}/{x}/{y}.jpg?key=toOFSy59NaIVWVgz1jeE'}
           title={'<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>'}
           />}/>
           <Route  path="/nothing" element={<Countdown/>}/>
+         
         </Routes>
-        </BrowserRouter>
-      <MyFooter/>
-
-
-   
+        
+    </ BrowserRouter>
+    <MyFooter/>
     </>
   )
 }
